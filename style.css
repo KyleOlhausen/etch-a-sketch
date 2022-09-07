@@ -1,0 +1,32 @@
+
+
+body {
+    background-color: darkred;
+}
+
+
+.container {    
+    flex: auto;
+    margin: 0 auto;
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 15px solid black;
+}
+
+
+.row {
+    justify-content: center;
+    flex: 1;
+    display:flex;
+}
+
+
+.row div {
+    height: 30px;
+    width: 30px;
+    margin: 2px;    
+    background-color: black;
+}
+
