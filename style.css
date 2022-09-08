@@ -26,10 +26,6 @@ body {
     gap: 50px;
 }
 
-#value {
-    width: 40px;
-    margin-right: 15px;
-}
 
 
 
@@ -49,12 +45,15 @@ body {
     display:flex;
 }
 
-.row div {
+.default {
     flex: 1;
     margin: 2px;    
     background-color: white;
 }
 
+.colored {
+    background-color: darkgray;
+}
 
 
 
