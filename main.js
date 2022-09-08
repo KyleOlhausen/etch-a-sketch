@@ -2,15 +2,31 @@ let container = document.querySelector(".container");
 
 let panel = document.createElement("div");
 
+let rowNum = 2;
 
 
-for(let i = 0; i < 16; i++)
+
+
+function buildGrid(rowNum)
 {
-    let row = document.createElement("div");
-    row.classList.add("row");
-    container.appendChild(row);
-    for(let j = 0; j < 16; j++)
+    for(let i = 0; i < rowNum; i++)
     {
-        row.appendChild(document.createElement("div"));
+        let row = document.createElement("div");
+        row.classList.add("row");
+        container.appendChild(row);
+        for(let j = 0; j < rowNum; j++)
+        {
+            row.appendChild(document.createElement("div"));
+        }
     }
 }
+
+
+
+document.getElementById("submit").onclick = () => {
+    rowNum = document.getElementById("value").value;
+    buildGrid(rowNum)
+}
+
+
+buildGrid(rowNum);

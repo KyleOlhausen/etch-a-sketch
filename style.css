@@ -1,18 +1,35 @@
 
 
+
 body {
     background-color: darkred;
+    text-align: center;
 }
 
 
+.header {
+    margin: 70px;
+    color: white;
+}
+
+
+.outerContainer {
+    
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+
+
 .container {    
-    flex: auto;
-    margin: 0 auto;
+ 
+    border: 5px solid white;
     height: 600px;
     width: 600px;
     display: flex;
-    flex-direction: column;
-    border: 15px solid black;
+    flex-direction: column; 
 }
 
 
@@ -24,9 +41,11 @@ body {
 
 
 .row div {
-    height: 30px;
-    width: 30px;
+    flex: 1;
     margin: 2px;    
-    background-color: black;
+    background-color: white;
 }
+
+
+
 
