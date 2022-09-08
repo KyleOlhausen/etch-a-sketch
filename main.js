@@ -2,7 +2,7 @@ let container = document.querySelector(".container");
 
 let panel = document.createElement("div");
 
-let rowNum = 2;
+let rowNum = 16;
 
 
 
@@ -21,11 +21,20 @@ function buildGrid(rowNum)
     }
 }
 
+let reset = document.querySelector(".reset");
+reset.addEventListener("click", () => {
+   rowNum = prompt();
+   removeGrid();
+   buildGrid(rowNum);
+})
 
 
-document.getElementById("submit").onclick = () => {
-    rowNum = document.getElementById("value").value;
-    buildGrid(rowNum)
+function removeGrid()
+{
+    while(container.firstChild)
+    {
+        container.removeChild(container.lastChild);
+    }
 }
 
 
