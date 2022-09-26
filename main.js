@@ -35,11 +35,12 @@ function removeGrid()
 
 reset.addEventListener("click", () => {
    rowNum = prompt();
-   if(rowNum != null)
+   if(rowNum < 2)
    {
-        removeGrid();
-        buildGrid(rowNum);
+        rowNum = 16;
    }
+   removeGrid();
+   buildGrid(rowNum);
   
 })
 
